@@ -1,0 +1,41 @@
+{
+  "name": "designpick",
+  "version": "0.1.0",
+  "description": "AI-powered UI design variant comparison and elimination tool. MCP server for Claude Code, Cursor, and other AI coding agents.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "designpick": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && cp -r src/public dist/public",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "design",
+    "ui",
+    "ai",
+    "comparison",
+    "variant",
+    "bracket",
+    "elimination"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "open": "^10.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
