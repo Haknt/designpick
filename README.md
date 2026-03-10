@@ -2,6 +2,8 @@
 
 Visual design comparison tool for AI coding agents. When an AI generates multiple UI variants, designpick renders them side-by-side and lets you pick your favorite — directly from your terminal.
 
+![designpick comparison UI](screenshot.png)
+
 ## How it works
 
 1. AI agent generates 2–8 HTML design variants
